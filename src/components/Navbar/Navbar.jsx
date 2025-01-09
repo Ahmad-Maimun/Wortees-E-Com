@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../../public/images/logo.png';
+import logo from '../../../public/images/logo.png';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-t from-[#F9F2DF]/80 to-[#F9F2DF]/100">
+    <nav className="border-b border-[#BFBFBF] border-dashed">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -134,11 +134,11 @@ const Navbar = () => {
                 </div>
               </div>
             )}
-            <div className="w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
+            <div className="cursor-pointer w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
               <FavoriteBorderIcon />
             </div>
             <span className="w-[2px] h-5 bg-[#464646] mx-4"></span>
-            <div className="w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
+            <div className="cursor-pointer w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
               <LocalMallOutlinedIcon />
             </div>
             <span className="ml-2 text-sm font-semibold leading-4">
