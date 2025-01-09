@@ -77,73 +77,73 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            {/* Select Language */}
-            <div className="relative text-left flex items-center">
-              {/* Language Button */}
-              <button
-                onClick={toggleDropdown}
-                className="flex items-center mr-5"
-              >
-                <img
-                  src="https://flagcdn.com/w20/us.png"
-                  alt="USA Flag"
-                  className="w-5 h-4 mr-2 rounded-lg"
-                />
-                EN
-                <KeyboardArrowDownIcon />
-              </button>
+          </div>
+          {/* Select Language */}
+          <div className="relative text-left flex items-center">
+            {/* Language Button */}
+            <button onClick={toggleDropdown} className="flex items-center mr-5">
+              <img
+                src="https://flagcdn.com/w20/us.png"
+                alt="USA Flag"
+                className="w-5 h-4 mr-2 rounded-lg"
+              />
+              EN
+              <KeyboardArrowDownIcon />
+            </button>
 
-              {/* Dropdown */}
-              {isOpen && (
-                <div className="origin-top-right absolute right-0 mt-[180px] w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                  <div className="py-1">
-                    {/* English */}
-                    <a
-                      href="#"
-                      className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      <img
-                        src="https://flagcdn.com/w20/us.png"
-                        alt="USA Flag"
-                        className="w-5 h-4 mr-3"
-                      />
-                      <span>English</span>
-                    </a>
-                    {/* Spanish */}
-                    <a
-                      href="#"
-                      className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      <img
-                        src="https://flagcdn.com/w20/es.png"
-                        alt="Spain Flag"
-                        className="w-5 h-4 mr-3"
-                      />
-                      <span>Spanish</span>
-                    </a>
-                    {/* French */}
-                    <a
-                      href="#"
-                      className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      <img
-                        src="https://flagcdn.com/w20/fr.png"
-                        alt="France Flag"
-                        className="w-5 h-4 mr-3"
-                      />
-                      <span>French</span>
-                    </a>
-                  </div>
+            {/* Dropdown */}
+            {isOpen && (
+              <div className="origin-top-right mr-24 absolute right-0 mt-[180px] w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                <div className="py-1">
+                  {/* English */}
+                  <a
+                    href="#"
+                    className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <img
+                      src="https://flagcdn.com/w20/us.png"
+                      alt="USA Flag"
+                      className="w-5 h-4 mr-3"
+                    />
+                    <span>English</span>
+                  </a>
+                  {/* Spanish */}
+                  <a
+                    href="#"
+                    className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <img
+                      src="https://flagcdn.com/w20/es.png"
+                      alt="Spain Flag"
+                      className="w-5 h-4 mr-3"
+                    />
+                    <span>Spanish</span>
+                  </a>
+                  {/* French */}
+                  <a
+                    href="#"
+                    className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <img
+                      src="https://flagcdn.com/w20/fr.png"
+                      alt="France Flag"
+                      className="w-5 h-4 mr-3"
+                    />
+                    <span>French</span>
+                  </a>
                 </div>
-              )}
-              <div className="w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
-                <FavoriteBorderIcon />
               </div>
-              <span className="w-[2px] h-5 bg-[#464646] mx-4"></span>
-              <div className="w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
-                <LocalMallOutlinedIcon />
-              </div>
+            )}
+            <div className="w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
+              <FavoriteBorderIcon />
             </div>
+            <span className="w-[2px] h-5 bg-[#464646] mx-4"></span>
+            <div className="w-11 h-11 bg-[#F5F5F5] rounded-[50%] border border-[#E6E6E6] flex justify-center items-center">
+              <LocalMallOutlinedIcon />
+            </div>
+            <span className="ml-2 text-sm font-semibold leading-4">
+              CART (1)
+            </span>
           </div>
         </div>
       </div>
